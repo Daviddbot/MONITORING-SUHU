@@ -17,8 +17,8 @@ int lcdRows = 2;
 LiquidCrystal_I2C lcd(0x27, lcdColumns, lcdRows);
 
 //wifi yng di gunakan
-const char* ssid     = "--";
-const char* password = "--";
+const char* ssid     = "YOUR SSID";
+const char* password = "YOUR PASSWORD";
 const char* host = "192.168.218.102"; // your server
 
 
@@ -113,7 +113,7 @@ void loop()
         return;
     }
 
-    //kirim data kw server
+    //kirim data kE server
      client.print(String("GET http://192.168.218.102/example/connect.php?") + 
                               ("temperature=") + temperature +
                               ("&humidity=") + humidity +
