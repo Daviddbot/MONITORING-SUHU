@@ -17,9 +17,9 @@ int lcdRows = 2;
 LiquidCrystal_I2C lcd(0x27, lcdColumns, lcdRows);
 
 //wifi yng di gunakan
-const char* ssid     = "yustinaa";
-const char* password = "25042005";
-const char* host = "192.168.218.102";//iso ganti sak wayah2
+const char* ssid     = "--";
+const char* password = "--";
+const char* host = "192.168.218.102"; // your server
 
 
 
@@ -77,7 +77,7 @@ void loop()
        lcd.setCursor(0, 0);
   lcd.print("Temp: ");
   lcd.print(temperature);
-  lcd.print((char)223); // print degree symbol
+  lcd.print((char)223); 
   lcd.print("C");
 
   lcd.setCursor(0, 1);
